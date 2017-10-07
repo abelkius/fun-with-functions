@@ -3,10 +3,10 @@ function mergeSort(arr) {
   if (arr.length === 1) {
    return arr;
   }
-  var length = arr.length;
-  var middle = Math.floor(length / 2);
-  var left = arr.slice(0, middle);
-  var right = arr.slice(middle, length);
+  const length = arr.length;
+  const middle = Math.floor(length / 2);
+  const left = arr.slice(0, middle);
+  const right = arr.slice(middle, length);
 
   return stich(mergeSort(left), mergeSort(right));
 }
